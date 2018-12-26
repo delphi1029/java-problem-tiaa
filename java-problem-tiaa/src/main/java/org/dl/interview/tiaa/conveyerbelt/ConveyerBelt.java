@@ -46,6 +46,7 @@ public class ConveyerBelt extends ReentrantLock {
 		try {
 			rawMaterial =  queue.take();
 		} catch (InterruptedException e) {
+			Thread.currentThread().interrupt();
 			e.printStackTrace();
 		}
 		return rawMaterial;

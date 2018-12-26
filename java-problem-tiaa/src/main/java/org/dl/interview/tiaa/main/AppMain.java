@@ -5,7 +5,7 @@ import java.util.concurrent.ExecutionException;
 import org.dl.interview.tiaa.service.TimeCalculatorService;
 import org.dl.interview.tiaa.warehouse.Warehouse;
 
-public class TestMain {
+public class AppMain {
 
 	public static void main(String[] args) throws InterruptedException, ExecutionException {
 		int numberOfBolts = 12;

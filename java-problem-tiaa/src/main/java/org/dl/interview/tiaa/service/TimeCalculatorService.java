@@ -37,6 +37,7 @@ public class TimeCalculatorService {
 					result_totalTime = result.get().getTotalTimeToCreateProducts();
 				}
 			} catch (InterruptedException | ExecutionException e) {
+				Thread.currentThread().interrupt();
 				e.printStackTrace();
 			}
 		}

@@ -22,6 +22,7 @@ public class WorkerPool {
 		try {
 			results = service.invokeAll(workerList);
 		} catch (InterruptedException e) {
+			Thread.currentThread().interrupt();
 			e.printStackTrace();
 		}
 		return results;

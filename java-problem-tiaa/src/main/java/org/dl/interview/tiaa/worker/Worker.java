@@ -54,6 +54,7 @@ public class Worker implements Callable<Result> {
 				Thread.sleep(timeToCreateProduct);
 				reset();
 			} catch (InterruptedException e) {
+				Thread.currentThread().interrupt();
 				e.printStackTrace();
 			}
 			result.incrementNoOfProducts();
